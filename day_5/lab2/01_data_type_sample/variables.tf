@@ -1,0 +1,4 @@
+variable "usernumber" {
+  type = string
+}
+
