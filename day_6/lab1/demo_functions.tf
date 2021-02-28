@@ -23,12 +23,12 @@ variable "region" {
 }
 
 variable "tags" {
-  type    = list
+  type    = list(any)
   default = ["firstec2", "secondec2"]
 }
 
 variable "ami" {
-  type = map
+  type = map(any)
   default = {
     "us-east-1"  = "ami-0be2609ba883822ec"
     "us-west-2"  = "ami-0a36eb8fadc976275"
